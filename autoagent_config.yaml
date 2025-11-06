@@ -1,0 +1,11 @@
+llms:
+  local:
+    client: openai_compat
+    default_general: llama3.1
+    default_code: qwen2.5-coder:7b
+
+routing:
+  rules:
+    - if: ["code","refactor","tests"]
+      use: local.default_code
+    - else: local.default_general
