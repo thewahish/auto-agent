@@ -1,0 +1,11 @@
+{
+  "name": "AutoAgent",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python -m http.server 8403",
+    "serve": "python -m http.server 8403"
+  },
+  "config": {
+    "port": 8403
+  }
+}
